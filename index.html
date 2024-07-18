@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer sair comigo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="convite">
+            <p>Quer sair comigo para assistir Deadpool e Wolverine na pré-estreia?</p>
+            <button id="sim">Sim</button>
+            <button id="nao">Não</button>
+            <button id="jogar" onclick="location.href='game.html'">Jogar</button>
+        </div>
+        <p id="resposta"></p>
+        <div id="contador">
+            <p>Tempo até o nosso encontro:</p>
+            <p id="tempoRestante"></p>
+            <p>Com direito a presente!</p>
+        </div>
+        <form id="form" action="https://formspree.io/f/mqazajjl" method="POST" style="display: none;">
+            <input type="text" name="Resposta" id="inputResposta">
+            <input type="email" name="_replyto" value="joaovictor_gomes.7@hotmail.com">
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

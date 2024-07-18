@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url('assets/dino.png'); /* Substitua pelo caminho da imagem do dinossauro */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cactus {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 20px;
+  height: 40px;
+  background-image: url('assets/cactus.png'); /* Substitua pelo caminho da imagem do cacto */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus {
+  0% {
+      right: -20px;
+  }
+  100% {
+      right: 100%;
+  }
+}
